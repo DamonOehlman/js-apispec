@@ -23,9 +23,24 @@ Matcher
         > (prop:string value:*) => Matcher
         > (prop:string value:* result:object) => Matcher
         
+        __NOTE__: In the case where a result argument is supplied !comparator will update
+        `result.ok` rather than `this.ok` of the Matcher instance.
+        
     gt!comparator
 
-        Check for a value being more 
+        Greater than property check
+        
+    gte!comparator
+    
+        Greater than or equal to property check
+    
+    lt!comparator
+    
+        Less than property check
+    
+    lte!comparator
+    
+        Less than or equal to property check
         
     
 
