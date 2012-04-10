@@ -1,0 +1,33 @@
+matchme
+
+    The matchme function is used to either creater a <Matcher> for a target object
+    or to evaluate whether the object matches a specified query string.
+
+    > (target:object) => Matcher
+    > (target:object opts:options) => Matcher
+    > (target:object query:string) => Boolean
+    > (target:object opts:options query:string) => Boolean
+    
+    For forms accepting an options string, the following options are supported:
+    
+    - caseSensitive:boolean (default = true) whether or not string comparisons should be case sensitive
+    
+    ```
+    matchme()
+    ```
+            
+Matcher
+
+    !comparator
+    
+        > (prop:string value:*) => Matcher
+        > (prop:string value:* result:object) => Matcher
+        
+    gt!comparator
+
+        Check for a value being more 
+        
+    
+
+
+
